@@ -220,6 +220,13 @@ class AccentAnalyzer:
             # Apply audio quality weighting
             quality_factor = min(1.0, audio_features.get('duration', 0) / 30)  # Longer audio = better confidence
             final_score *= quality_factor
+
+                  # Add balanced scoring - reduce bias toward any single accent
+            if accent_name == 'Indian' and final_score > 70:
+                final_score *= 0.85  # Reduce Indian bias
+            elif accent_name in ['American', 'British'] and final_score < 30:
+                final_score += 10  # Boost common accents slightly
+               
             
             return min(100, max(0, final_score))
             
