@@ -13,33 +13,7 @@ A professional AI-powered web application for analyzing English accents from vid
 
 ## Quick Deployment
 
-### Option 1: Streamlit Cloud (Recommended)
-1. Fork this repository to your GitHub account
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub account
-4. Deploy directly from your repository
-5. Your app will be live at `https://your-app-name.streamlit.app`
-
-### Option 2: Heroku
-1. Install Heroku CLI
-2. Create a `Procfile` with: `web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
-3. Deploy with: `git push heroku main`
-
-### Option 3: Railway
-1. Connect your GitHub repository to Railway
-2. Railway will automatically detect the Streamlit app
-3. Deploy with one click
-
-### Option 4: DigitalOcean App Platform
-1. Connect your GitHub repository
-2. Set build command: `pip install -r deployment_requirements.txt`
-3. Set run command: `streamlit run app.py --server.port=8080 --server.address=0.0.0.0`
-
-## Local Development
-
-### Prerequisites
-- Python 3.8+
-- pip or conda
+### Option 1: Streamlit Cloud (I used this since it free)
 
 ### Installation
 ```bash
@@ -54,7 +28,7 @@ pip install -r deployment_requirements.txt
 streamlit run app.py
 ```
 
-The app will be available at `http://localhost:8501`
+The app is be available at `http://localhost:8501](https://accent-analyzer-by-ronald-tuhairwe.streamlit.app/`
 
 ## File Structure
 
@@ -110,17 +84,6 @@ The app includes optimized settings in `.streamlit/config.toml` for:
 - Vimeo
 - Direct video links (MP4, AVI, MOV, etc.)
 
-## Cost Considerations
-
-### Free Deployment Options
-- **Streamlit Cloud**: Free tier available
-- **Railway**: $5/month after free tier
-- **Heroku**: Limited free tier
-
-### Resource Requirements
-- Memory: 512MB minimum, 1GB recommended
-- CPU: Single core sufficient
-- Storage: 1GB for dependencies
 
 ## Security & Privacy
 
@@ -129,12 +92,9 @@ The app includes optimized settings in `.streamlit/config.toml` for:
 - No personal data is retained
 - HTTPS encryption for all communications
 
-## Support
 
-For deployment assistance or customization:
-- Check the deployment platform's documentation
-- Ensure all dependencies are correctly installed
-- Verify that the port configuration matches your platform's requirements
+  ## Now its remaining with training data for and then it cam perfect its categorize as more audios are tested 
+
 
 ## License
 
